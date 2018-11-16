@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+html,body{
+    background-color: #f0f3f5;
+    height:100%;
+}
+img{
+    display: block;
+    width: 100%;
+}
+.Ty_mall {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  padding-top:50px;
+  padding-bottom: 0 !important;
+}
+.Ty_main {
+  width: 100%;
+  height: 100%;
+  background-color:#fafafa !important;
+  overflow: hidden;
+  position: relative;
+}
+.Ty_header {
+  width: 100%;
+  height:50px;
+  background-color: #f2f2f2;
+  position: absolute;
+  top: 0;
+  line-height: 50px;
+}
+.Ty_header a{
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #000;
+}
+.searchInput{
+    width:7.5rem;
+    margin: 0 auto;
+    padding-top: 0.01rem;
+}
+.searchInput input{
+    margin-bottom: 0 !important;
+    border-radius:0.7rem;
+    text-align: left;
+    background-color: #fff;
+    font-size: 0.35rem;
+}
+
+
+.tabNavs{
+    width: 100%;
+    overflow: hidden;
+    background-color: #fff;
+    padding-top: 10px;
+}
+.tabNavs a{
+    float: left;
+    width: 25%;
+    text-align: center;
+    color: #333;
+}
+.tabNavs a.now{
+   color: orange;
+}
+#goodList{
+    overflow: hidden;
+    width: 100%;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    margin-top: 0.4rem;
+}
+#goodList a{
+    width: 48.5%;
+    background-color: #fff;
+    padding: 0.3rem;
+    float: left;
+    display: block;
+    overflow: hidden;
+    border-radius:0.2rem;
+    margin-top: 0.1333rem; 
+}
+#goodList a p{
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    color: #000;
+    margin-top: 0.2667rem;
+    font-size: 0.35rem;
+}
+#goodList a:nth-child(odd){
+    margin-right: 0.24rem;
+}
+#goodList a img{
+    width: 100%;
+    margin: 0 auto;
+    border-radius:5px; 
+}
+#goodList a p.title{
+    font-size: 0.35rem;
+    color: #000;
+    width:6.5rem;
+    padding-left: 0.2rem;
+    float: left;
+    margin-top: 0.2rem;
+}
+#goodList span.price{
+    color: #f23030;
+    float: left;
+    margin-left: 0.2rem;
+}
+
+.loading {
+    width: 40px;
+    height: 40px;
+    border: 3px solid orange;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 200px;
+    animation: play 1s ease-in-out infinite;
+  }
+  
+  
+@keyframes play {
+    from{
+      transform: translateX(-50%) rotate(0deg);
+    }
+    to{
+      transform: translateX(-50%) rotate(360deg);
+    }
+}
+span#close{
+    position:absolute;
+    right: 0.25rem;
+    top: 0.45rem;
+    background-color:#dedede;
+    color:#fff;
+    border-radius:50%;
+    font-size: 0.48rem;
+    display: none;
+}
